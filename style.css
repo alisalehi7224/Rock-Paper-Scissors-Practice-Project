@@ -1,0 +1,155 @@
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+
+#fullScreen{
+    font-size: 0.8rem;
+}
+
+#symbols{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4.5rem;
+    color: hsla(0, 0%, 0%, 0.896);
+    margin-bottom: 20px;
+}
+
+
+.symbol{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 6.5rem;
+    width: 160px;
+    height: 160px;
+    background-color: hsl(180, 100%, 50%);
+    margin: 20px;
+    border-radius: 1000px;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 3px 3px 5px hsl(194, 100%, 39%);
+
+}
+
+.symbol:hover{
+    background-color: hsl(180, 100%, 40%);
+}
+
+
+.symbol:active{
+    background-color: hsl(180, 100%,20%);
+}
+
+
+
+.choiceContainer{
+    width: 360px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+
+#playerChoiceDisplay, #computerChoiceDisplay{
+    font-size: 2rem;
+}
+
+#resultDisplay{
+    font-size: 3rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    left: 20px;
+}
+
+#playerScoreDisplay, #computerScoreDisplay, #drawDisplay{
+    font-size: 1.3rem;
+    margin: 5px;
+    text-align: left;
+}
+
+.tie{
+    color: hsl(0, 0%, 0%);
+}
+
+.win{
+    color: hsl(120, 100%, 71%);
+}
+
+.lose{
+    color: hsl(0, 100%, 50%);
+}
+
+.resultsContainer{
+    width: 370px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+}
+
+#resetButton{
+    border: none;
+    background-color: hsl(120, 100%, 40%);
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+#resetButton:hover{
+    background-color: hsl(120, 100%, 35%);
+}
+
+#resetButton:active{
+    background-color: hsl(120, 100%, 30%);
+}
+
+
+#matchHistory{
+    display: inline-block;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    white-space: pre-line;
+    text-align: left;
+}
+
+
+
+button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    box-shadow: 3px 3px 5px hsl(0, 0%, 32%);
+
+}
+
+button:disabled:hover {
+    background-color: gray;
+}
+
+
+.matchHistoryWin{
+    color: hsl(120, 100%, 50%);
+}
+
+.matchHistoryLoss{
+    color: hsl(0, 100%, 50%);
+}
+
+.matchHistoryTie{
+    color: hsl(0, 0%, 0%);
+}

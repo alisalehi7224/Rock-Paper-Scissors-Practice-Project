@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="fullScreen">Please go fullscreen</p>
+    <h1 id="title">Rock - Paper - Scissors</h1>
+
+    <div id="symbols">
+        <button class="symbol" onclick="playGame(`rock`)" id="rockButton">👊</button>
+        <button class="symbol" onclick="playGame(`paper`)" id="paperButton">✋</button>
+        <button class="symbol" onclick="playGame(`scissors`)" id="scissorsButton">✌</button>
+    </div>
+
+    <div class="choiceContainer">
+        <div id="playerChoiceDisplay">🧑‍🦰 Player: </div>
+        <div id="computerChoiceDisplay">💻 Computer: </div>
+    </div>
+
+    <div id="matchHistory">
+        
+    </div>
+
+
+    <div id="resultDisplay">LET'S GO!</div>
+
+    <div class="resultsContainer">
+        <div id="playerScoreDisplay" class="scores">• Player Score: 0</div>
+        <div id="computerScoreDisplay" class="scores">• Computer Score: 0</div>
+        <div id="drawDisplay" class="scores">• Draws: 0</div>
+        <button id="resetButton">Reset</button>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>
